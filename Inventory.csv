@@ -1,0 +1,9 @@
+Group,Application/Workload,Proposed Rationalization,Justification,Priority 
+,,,,"(high, mid, low)"
+1,Retail innovation team server 1-2-3,Rehost,We can move to the same feature Hyper-V which Azure provide us and less cost.,high
+2,Domain Controller Server 1-2,Rehost or Replace ,In the Azure env there is another option which is named Azure AD. Domain Controller Servers  could potentially be replaced with Azure Active Directory services.,high
+3,20 year old billing application server,Rearchitect/ Rebuild,"There are two possible approaches you can take to migrate your application server to Azure: lift and shift or rearchitect/ Rebuild. Given their age, it might be more beneficial to rebuild these applications using modern architectures and technologies.",high
+4,DHCP Server ,Rehost or Replace ,Azure provides several services which can replace traditional DHCP like Azure Virtual Networks (VNet). ,mid
+5,Website DB Server 1 and SQL DB servers,Rehost or Refactor,"We can use Azure DB services, Azure provide wide renge of options as PaaS DB solitions. Main Website DB Servers can be move to Azure SQL or other managed database services.",mid
+6,Website Server 1,Rehost or Refactor,"There are some Azure native options to move for Group 6, Website servers, which are azure webapp, aks, etc. So, Website Server 1 could potentially be containerized.",mid
+7,Unknown,Rehost or Rearchitect,Unknown workloads might need reassessment for optimization and can then be rearchitected for better cloud compatibility.,high
